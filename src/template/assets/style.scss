@@ -1,0 +1,139 @@
+$kaki: #75826b;
+$container: clamp(10px, 5vw, 25vw);
+$titleColor: #444444;
+
+html, body{
+  margin:0;
+  padding:0;
+  scroll-behavior: smooth;
+  background:#f5f4eb;
+  color: #939082;
+  font-family: 'Roboto', sans-serif;
+}
+
+a{
+  color: $kaki;
+}
+
+h2,h3,h4,h5{
+  color: $titleColor;
+  font-family: 'Vidaloka', sans-serif;
+  font-weight:400;
+}
+
+header, nav{
+  background: #2c2c2c;
+  color:#f5f4eb;
+}
+
+header{
+  padding:80px $container;
+  h1{
+    margin:0;
+
+  }
+}
+
+nav{
+  padding: 20px $container;
+  position:sticky;
+  top:0;
+  z-index:100;
+  ul {
+    border-top: 3px solid white;
+    display:flex;
+    align-items:center;
+    margin:0;
+    list-style-type:none;
+    justify-content:space-evenly;
+    padding: 10px 0;
+    li {
+      padding: 10px 15px;
+      font-family: 'Vidaloka', serif;
+      text-align:center;
+    }
+  }
+}
+
+.fullItem {
+  align-items:center;
+  background-position:center;
+  background-size:cover;
+  display:flex;
+  justify-content:center;
+  padding:120px clamp(10px, 9vw, 120px);
+  position:relative;
+  > div {
+    backdrop-filter: brightness(0.8);
+    content:'';
+    inset:0;
+    position:absolute;
+    z-index:0;
+  }
+  > h2 {
+    backdrop-filter: brightness(0.8) blur(2px);
+    border: 2px solid white;
+    color:white;
+    margin:0; 
+    padding: 50px $container;
+    text-align:center;
+    text-transform:capitalize;
+    z-index:1;
+  }
+}
+
+.block_content{
+  padding: 75px 50px;
+  min-height:450px;
+}
+
+.launcher {
+  padding: 75px $container;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  h2 {
+    margin:0;
+    padding: 50px $container;
+    border: 2px solid $kaki;
+    border-bottom: 0px;
+    text-align:center;
+    text-transform: capitalize;
+    font-size: clamp(20px, 8vw, 45px);
+    
+  }
+
+  p{
+    text-align:center;
+    font-size: clamp(12px, 5vw, 22px);
+    padding: 0 $container;
+    line-height: 1.6em;    
+  }
+
+  a {
+    margin: 10px auto 0;
+    padding: 15px;
+    text-transform: capitalize;
+    display:inline-block;
+    border: 2px solid $kaki;
+    text-decoration:none;
+    font-size: clamp(12px, 5vw, 22px);
+    font-weight:400;
+    font-family: 'Vidaloka', serif;
+  }
+}
+
+.contact_area{
+    background-image:url(https://template114021.motopreview.com/mt-demo/114000/114021/mt-content/uploads/2020/09/mt-2101_home_bg04.jpg);
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    min-height:450px;
+    padding: 75px $container;
+    text-align:center;
+    h3 {
+      color:white;
+    }
+
+}
+
